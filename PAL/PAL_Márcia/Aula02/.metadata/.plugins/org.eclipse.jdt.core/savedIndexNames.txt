@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\PAL_Márcia\Aula02\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+848974742.index
+2677767988.index

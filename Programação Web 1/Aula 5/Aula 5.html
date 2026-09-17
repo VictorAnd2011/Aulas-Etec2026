@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<style>
+    /* 1.Resetando a lista para virar um Menu */
+     .menu {
+        list-style-type: none; /* Remove as bolinhas */
+        padding: 0;            /* Remove o recuo da esquerda */
+        background-color: #333; /* Fundo escuro */
+        display: flex; /* Ativa o modo Flexbox */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        } 
+
+    /* 2. Colocando os itens lado a lado */
+
+     .menu li {
+        float: left; /* Faz os itens alinharem à esquerda (lado a lado)*/    
+    } 
+
+    /* 3. Estilizando os links dentro da lista */ 
+     .menu li a {
+        display: block; /* Faz o linke ocupar todo o espaço do botão */
+        color: white; /* Texto branco */
+        text-align: center; /* Centraliza o texto */
+        padding: 14px 30px; /* Dá tamanho ao botão*/
+        text-decoration: none; /* remove o sublinhado*/
+        }
+
+    /* 4. Efeito ao passar o mouse */
+     .menu li a:hover {
+        background-color: #555555; /* Muda a cor ao passar o mouse*/    
+        } 
+</style>
+
+</head>
+        
+<body>
+    <h2>Menu de Navegação Estilizado</h2>
+
+    <!-- retirar  a classe class="menu" para testar !-->
+    <ul class="menu">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+
+    <h2>Exemplo de tipo de marcador</h2>
+    <ul style="list-style-type:square"> 
+        <li>Exemplo</li>
+        <li>Exemplo 2</li>
+    </ul>
+</body>

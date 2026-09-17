@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(250, 225, 202);
+    color: rgb(61, 30, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 40px 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 2.2rem;
+    color: rgb(41, 26, 37);
+    text-align: center;
+}
+
+p {
+    font-style: italic;
+    color:rgb(100, 59, 21);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: none;
+    background-color: rgb(177, 136, 90);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: inset 2px 2px 5px rgb(223, 194, 168), inset -2px -2px 5px whitesmoke;
+}   
+
+legend {
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgb(77, 55, 23);
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    background-color: rgb(255, 206, 150);
+    border: 2px solid rgb(48, 32, 3);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+    color: rgba(78, 37, 13, 0.596);
+}
+
+input:focus, select:focus,textarea:focus {
+    outline: none;
+    border-color: rgb(212, 167, 69);
+}
+
+input[type="submit"] {
+    background-color: rgb(94, 60, 10);
+    color: aliceblue;
+    border: none;
+    border-radius: 25px;
+    padding: 14px 28px;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+}
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    background-color: rgb(165, 87, 42);
+}
+
+input[type="reset"] {
+    background-color: rgb(94, 60, 10);
+    color: aliceblue;
+    border: none;
+    border-radius: 25px;
+    padding: 14px 28px;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+}
+input[type="reset"]:hover {
+    transform: translateY(-2px);
+    background-color: rgb(165, 87, 42);
+}

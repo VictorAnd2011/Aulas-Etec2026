@@ -1,0 +1,95 @@
+   header{
+        background: linear-gradient(to right, #0075fa, #04f3b7);
+        color: azure;
+        text-align: center;
+        padding: 50px;
+        font-family: 'Comic Sans MS', 'Comic Sans';
+
+    }
+
+    body{
+        margin: 0px;
+        background-color: rgba(206, 208, 241, 0.418);
+    }
+    .Projetos{
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Pro{
+        width: 300px;
+        height: 300px;
+        border: 1px solid #dddddd8f;
+        overflow: hidden;
+        border-radius: 20px;
+        background-color: #5faaff;
+        border-color: #0d8373ce;
+           
+    }
+
+    .pro-titulo{
+        background: linear-gradient(to right, #0075fa, #04f3b7);
+        text-align: center;
+        color: rgb(1, 4, 44);
+        padding: 1px;
+        display: block;
+        font-family: 'Comic Sans MS', 'Comic Sans';
+    }
+
+    .pro-descricao{
+        text-align: center;
+        font-family: 'Comic Sans MS', 'Comic Sans';
+        padding: 15px;
+    }
+    
+    .link-pro{
+        text-decoration: none;
+        background-color: #0056b8c7;
+        color: white;
+        padding: 7px;
+        display: block;
+        text-align: center;
+        border-radius: 4px;
+        margin: 15px;
+    }
+    .divsem{
+        color:#000000;
+        text-align: center;
+        padding: 50px;
+        font-family: 'Comic Sans MS', 'Comic Sans';
+    }
+    .apps {
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        background-color: #0056b8c7 ;
+        display: flex;
+        justify-content: center;
+    }
+      .apps li {
+        margin-bottom: 20;
+    }
+      .apps li a {
+        color: black;
+        text-decoration: none;
+        padding: 14px 30px;
+        display: block;
+      }
+      .apps li a:hover { 
+        background-color: #0000ff;
+    }
+
+     .divisao{
+        border: 1px solid #00bcd4;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 5px; 
+        margin: 100px;
+        max-width: 800px;
+        display: flex;
+        align-items: center;
+
+
+    }

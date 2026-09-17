@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Exercício Formulário</title>
+    <link rel="stylesheet" href="estilo_form.css">
+</head>
+<body>
+    <h1> Inscrições para o torneio de eSports</h1>
+    <form enctype="multipart/form-data" >
+        <fieldset>
+            <legend>Dados do Competidor</legend>
+                <label for="txt-nome">Nome Completo:</label><br>
+                <input type="text" id="txt-nome" name="nome" placeholder="Digite o seu nome completo" required autofocus maxlength="60"><br><br>
+
+                <label for="txt-email">E-mail do Competidor:</label><br>
+                <input type="email" id="txt-email" name="email" placeholder="nome@dominio.com" required><br><br>
+
+                <label for="dt-nascimento">Data de Nascimento</label><br>
+                <input type="date" id="dt-nascimento" name="data_nascimento" required><br><br>
+
+                <label for="txt-disc">Discord ID:</label><br>
+                <input type="text" id="txt-disc" name="discord_id" placeholder="Digite o seu Discord ID" required><br><br>
+
+                <label for="txt-nick">Nick do Jogo:</label><br>
+                <input type="text" id="txt-nick" name="nick_jogo" placeholder="Digite o seu Nick do jogo" required pattern="[A-Za-z0-9]+#[0-9]{4}"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Modalidade e Equipamentos</legend>
+                <label for="sl-jogo">Jogo Principal:</label><br>
+
+                <select id="sl-jogo" name="jogo_principal" required>
+                    <option value="">-- Selecione o jogo --</option>
+                        <optgroup label="FPS / Tático">
+                            <option value="VA">Valorant</option>
+                            <option value="CS">CS 2</option>
+                        </optgroup>
+
+                        <optgroup label="MOBA">
+                            <option value="LOL">League of Legends</option>
+                            <option value="ML">Mobile Legends</option>
+                        </optgroup>
+
+                        <optgroup label="Futebol Digital">
+                            <option value="EA">EA Sports FC</option>
+                            <option value="FB">eFootball</option>
+                        </optgroup>
+                </select><br><br> 
+
+                <p>Plataforma Principal:</p>
+                    <input type="radio" id="pla-pc" name="plataforma" value="pc">
+                    <label for="pla-pc">PC</label><br>
+                    <input type="radio" id="pla-cs" name="plataforma" value="cs">
+                    <label for="pla-cs">Console</label><br>
+                    <input type="radio" id="pla-mb" name="plataforma" value="mb">
+                    <label for="pla-mb">Mobile</label><br><br>
+
+                <p>Plataformas de Stream:</p>
+                <input type="checkbox" id="chk-tw" name="Stream[]" value="tw">
+                <label for="chk-tw">Twitch</label><br>
+
+                <input type="checkbox" id="chk-yt" name="Stream[]" value="yt">
+                <label for="chk-yt">YouTube</label><br>
+
+                <input type="checkbox" id="chk-ttk" name="Stream[]" value="ttk">
+                <label for="chk-ttk">TikTok</label><br>
+
+                <input type="checkbox" id="chk-nen" name="Stream[]" value="nen">
+                <label for="chk-nen">Nenhum</label><br><br>
+
+                <label for="rng-experiencia">Nível de Experiência (1 a 5):</label>,<br>
+                <input type="range" id="rng-experiencia" name="experiencia" min="1" max="5">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Equipe e documentação</legend>
+
+            <label for="txt-nm_equipe">Nome da equipe</label>
+            <input type="text" id="txt-nm_equipe" name="nome_equipe" list="lista-nomes-sugeridos" placeholder="Escolha ou digite...">
+            <datalist id="lista-nomes-sugeridos">
+                    <option value="Skibidis">
+                    <option value="Auras Jrs ">
+                    <option value="Saborosos">
+                    <option value="Farmadores de 67">
+                    <option value="Lobos pidões">
+            </datalist>
+
+            <br><br>
+
+             <label for="fl-autorizacao">Anexar documento de autorização de menor   (PDF ou imagem):</label>
+                <br>
+                <input type="file" name="fl-autorizacao" id="fl-autorizacao" accept=".pdf, image/*">
+                <br><br>
+
+                <label for="txt-bioHist">Histórico / biografia:</label>
+                <br>
+                <textarea id="txt-bioHist" name="BioHist" rows="4" cols="50"
+                placeholder="Escreva aqui sua biografia/histórico..."></textarea>
+                <br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Validação do sistema</legend>
+
+            <input type="checkbox" id="chk-terms" name="terms[]" value="terms" required>
+                <label for="chk-terms">Aceite os termos do torneio</label><br>
+
+                <br><br>
+
+            <label for="txt-codins">Codigo de Inscrições:</label><br>
+            <input type="text" id="txt-codins" name="codigo_Inscrições" value="ESPORTS-2026-SP" readonly>
+
+            <br><br>
+
+            <label for="txt-status">Status</label> <br>
+            <input type="text" id="txt-status" name="status" value="Aguardando o envio" disabled>
+
+            <br><br>
+
+            <input type="hidden" id="txt-idEdic" name="ID_ediçao" value="ED-2026">
+
+        </fieldset>
+
+        <br>
+
+            <div>
+                <input type="submit" value="Confirmar inscrição no torneio">
+
+                <input type="reset" value="Limpar Formulário">
+            </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Aula 8</title>
+    <style>
+.container{
+    text-align: center;
+    padding: 20px;
+    font-family: Arial;
+}
+.foto-destino{
+    /* definimos um tamanho fixo para padronizar a galeria */
+    width: 300px;
+    height: 200px;
+
+    /*espaço entre as fotos */
+    margin: 10px;
+
+    /* 'cover' corta as sobras da foto para que ela preencha o 300*200 sem ficar "achatada" ou "esticada" */
+    object-fit: cover;
+
+    /*arredonda os cantos. 15px dá um toque moderno */
+    border-radius: 15px;
+
+    /* Cria uma sombra (deslocamento X, deslocamento Y, desfoque, cor) */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+
+    /* 'inline-block' permite que as fotos fiquem uma ao lado da outra */
+    display: inline-block;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nossos Destinos</h1>
+        <!--Inserindo imagens diretamente no HTML-->
+        <img src="https://picsum.photos/400/300?random=1" class="foto-destino" alt="praia">
+        <img src="https://picsum.photos/400/300?random=2" class="foto-destino" alt="cidade">
+        <img src="https://picsum.photos/400/300?random=3" class="foto-destino" alt="floresta">
+    </div>
+</body>
+</html>

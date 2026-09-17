@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Formulário completo de cadastro</h1>
+    
+    <p>Preencha os campos abaixo para testar todos os elementos nativos do HTML5. </p>
+
+    <!-- EStrutuda Form -->
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+                <label for="txt-nome">Nome Completo:</label>
+        
+                <br>
+
+                <input type="text" id="txt-nome" name="nome" placeholder="Digite o seu nome completo" required autofocus maxlength="80">
+        
+                <br><br>
+
+                <label for="txt-senha">Senha:</label>
+        
+                <br>
+
+                <input type="password" id="txt-senha" name="senha" required  minlength="6">
+        
+                <br><br>
+
+                <label for="txt-email">E-mail Corporativo:</label>
+        
+                <br>
+
+                <input type="email" id="txt-email" name="email" placeholder="nome@dominio.com" required>
+        
+                <br><br>
+
+                <label for="num-idade">Idade:</label>
+        
+                <br>
+
+                <input type="number" id="num-idade" name="idade" min="18" max="99" value="18">
+        
+                <br><br>
+
+                <label for="dt-nascimento">Data de Nascimento</label>
+        
+                <br>
+
+                <input type="date" id="dt-nascimento" name="data_nascimento">
+        
+                <br><br>
+                <p>Gênero:</p>
+                    <input type="radio" id="gen-m" name="genero" value="M">
+                    <label for="gen-m">Masculino</label><br>
+                    <input type="radio" id="gen-f" name="genero" value="F">
+                    <label for="gen-f">Feminino</label><br>
+                    <input type="radio" id="gen-o" name="genero" value="O">
+                    <label for="gen-o">Outro</label><br>
+
+                <br>
+
+                <label for="clr-favorita">Cor de Preferência:</label>
+        
+                <br>
+
+                <input type="color" id="clr-favorita" name="cor_favorita" value="#1A365D">
+
+                <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preferência e Endereço</legend>
+                <label for="sl-estado">Estado (UF):</label>
+                
+                <br>
+
+                <select id="sl-estado" name="estado" required>
+                    <option value="">-- Selecione um Estado --</option>
+                    <optgroup label="Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espírito Santo</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+        
+                </select>
+
+                <br><br> 
+
+                <label for="txt-navegador">Navergador principal:</label>
+
+                <br>
+
+                <input type="text" id="txt-navegador" name="Navergador" list="lista-navegadores"
+                placeholder="Escolha ou digite...">
+
+                <datalist id="lista-navegadores">
+                    <option value="Google chrome">
+                    <option value="Mozilla firefox">
+                    <option value="Microsoft edge">
+                    <option value="Safari">
+                    <option value="Opera">
+                </datalist>
+
+                <br><br>
+
+                <label for="txt-cep">CEP:</label>
+                
+                <br>
+
+                <input type="text" id="txt-cep" name="cep" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}">
+                
+                <br><br>
+
+                <label for="rng-satisfacao">Nível de Experiência (0 a 10):</label>
+
+                <br>
+
+                <input type="range" id="rng-satisfacao" name="satisfacao" min="0" max="10" value="5">
+                
+                <br><br>
+
+                <p>Interesses:</p>
+                <input type="checkbox" id="chk-html" name="Interesses[]" value="HTML" checked>
+                <label for="chk-html">HTML</label>
+                
+                <br>
+
+                <input type="checkbox" id="chk-css" name="Interesses[]" value="CSS">
+                <label for="chk-css">CSS3</label>
+                
+                <br>
+
+                <input type="checkbox" id="chk-bd" name="Interesses[]" value="BD">
+                <label for="chk-bd">Banco de Dados</label>
+                
+                <br>
+
+                <label for="fl-curriculo">Anexar documento(PDF ou imagem):</label>
+                <br>
+                <input type="file" name="fl-curriculo" id="fl-curriculo" accept=".pdf, image/*">
+                <br><br>
+
+                <label for="txt-observacoes">Observações / biografia:</label>
+                <br>
+                <textarea id="txt-observacoes" name="observacoes" rows="4" cols="50"
+                placeholder="Escreva aqui suas observações..."></textarea>
+                <br><br>
+            </fieldset>
+
+            <br>
+
+            <div>
+                <input type="submit" value="Enviar Dados" href="sucesso.html">
+
+                <input type="reset" value="Limpar Formulário">
+            </div>
+    </form>
+
+</body>
+</html>

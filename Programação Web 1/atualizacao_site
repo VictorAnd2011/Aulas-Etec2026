@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="atualizacao_site.css"></linkrel>>
+</head>
+
+<body>
+    <header>
+        <h1>Projetos de PWEB 1 ano</h1>
+    </header>
+    
+   
+<div class="Projetos">
+
+    <div class="Pro">
+        <div class="pro-titulo">
+            <h2>Projeto inicial</h2>
+        </div>
+        <div class="pro-descricao">
+            <p>Aprendemos a colocar textos e imagens</p>
+            <a href="aula2.html" class="link-pro">Link para o projeto</a>
+        </div>
+    </div>
+
+    <div class="Pro">
+        <div class="pro-titulo">
+            <h2>Projeto cápsula</h2>
+        </div>
+        <div class="pro-descricao">
+            <p>Aprendemos a conectar sites por links</p>
+            <a href="capsula/capsulamariapaula.html" class="link-pro">Link para o projeto</a>
+        </div>
+    </div>
+
+    <div class="Pro">
+        <div class="pro-titulo">
+            <h2>Projeto páginas</h2>
+        </div>
+        <div class="pro-descricao">
+            <p>Aprendemos a fazer várias páginas de um site e conecta-las</p>
+            <a href="paginas/primeirapagina.html" class="link-pro">Link para o projeto</a>
+        </div>
+    </div>
+
+    <div class="Pro">
+        <div class="pro-titulo">
+            <h2>Projeto exercício formulário</h2>
+        </div>
+        <div class="pro-descricao">
+            <p>Exercício sobre formulário</p>
+            <a href="aula2008/EXFormulario.html" class="link-pro">Link para o projeto</a>
+        </div>
+    </div>
+
+
+</div>
+ <section id="segundo semestre">
+
+
+    
+</body>
+</html>

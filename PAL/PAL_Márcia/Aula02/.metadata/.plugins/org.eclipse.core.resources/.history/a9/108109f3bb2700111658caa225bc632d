@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+
+public class Racao {
+
+	public static void main(String[] args) {
+	double S,G,Resto;
+	
+	S = Double.parseDouble(JOptionPane.showInputDialog("Digite o peso do saco:"));
+	G = Double.parseDouble(JOptionPane.showInputDialog("Digite a quantidade de ração fornecida para cada gato:"));
+	Resto = (S / 1000) - (G * 10);
+	JOptionPane.showMessageDialog(null, "Restará: " + Resto + " de ração");
+
+	}
+
+}

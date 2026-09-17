@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula13</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        body{
+            margin: 0%;
+            background-color: #d9c8ea;
+        }
+        header{
+            background-image: url(Roxo.jpg);
+            height:300px;
+            text-align: center;
+            display: flex;
+            color: beige;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .card {
+            width: 300px;
+            border: 1px solid #ddd;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #b67bf1;
+            border-color: #7d0eec;
+        }
+
+        .card-header {
+            background-color: #1c293b;
+        }
+
+        .card-header img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .btn-acao {
+            background-color: #6f156f;
+            color: white;
+            padding: 8px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .secao-cursos{
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        footer{
+            background-color: #4b0a4b;
+            color: azure;
+            height: 100px;
+            text-align: center; 
+            padding: 30px;  
+        }
+    </style>
+</head>
+<body>
+    <!--cabeçalho-->
+    <header>
+        <h1>MaTech Cursos</h1>
+        <P>Cursos de tecnologia</P>
+    </header>
+    <h2> Cursos disponíveis</h2>
+
+    <!-- Cursos --> 
+     <div class="secao-cursos">
+        <div class="card">
+            <div class="card-header">
+                <img src="imagemcurso3.jpg" alt="Imagem do curso 1">
+            </div>
+            <div class="card-body">
+                <h3> Curso de HTMl </h3>
+                <p> curso de como programar com HTML, aprenda a fazer seu proprio sites. </p>
+                <a href="#" class="btn-acao">Comprar Agora</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="imagem curso 2.jpg" alt="Imagem do curso 2">
+            </div>
+            <div class="card-body">
+                <h3> Curso de Pacote Office</h3>
+                <p> Curso de como usar o Word, Excel , PowerPoint etc.</p>
+                <a href="#" class="btn-acao">Comprar Agora</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="imagemcurso1.jpg" alt="Imagem do curso 3">
+            </div>
+            <div class="card-body">
+                <h3> Curso de informatica </h3>
+                <p> Curso de como funciona o Hardware e Software.</p>
+                <a href="#" class="btn-acao">Comprar Agora</a>
+            </div>
+        </div>
+    </div>
+<!--rodape-->
+    <footer>
+        <p> © 2026 MaTech Cursos - Maria Paula Teixeira de Castro -  
+            Cursos de tecnologias - ETEC Jorge Street</p>
+    </footer>
+</body>

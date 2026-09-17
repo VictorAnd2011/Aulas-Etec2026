@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Aula 8</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background: #eee;}
+
+        .album {padding: 50px;}
+
+        .foto-efeito {
+            width: 250px;
+            border-radius: 10px;
+            margin: 15px;
+            transform: all 0.5s; /* Faz com que a mudança de efeito seja suave*/
+
+            /* Deixa a imagem um pouco apagada ( 60% de vesibilidade)*/
+            opacity: 0.6;
+
+            /* Deixa a imagem totalmente em preto e branco*/
+            filter: grayscale(100%);
+        }
+
+        .foto-efeito:hover {
+            /* Volta a imagem para 100% de visibilidade */
+            opacity: 1;
+
+            /* Remove o filtro preto e branco */
+            filter: grayscale(0%);
+
+            /* Aumenta a foto */
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+    </style>
+</head>   
+<body>
+    <h1> galeria interativa</h1>
+    <p>Passe o mouse nas fotos</p>
+
+    <div class="album">
+        <img src="https://picsum.photos/300/300?random=4" class="foto-efeito">
+        <img src="https://picsum.photos/300/300?random=5" class="foto-efeito">
+        <img src="https://picsum.photos/300/300?random=6" class="foto-efeito">
+    </div>
+</body>
+</html>
