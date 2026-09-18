@@ -1,7 +1,7 @@
-#include <iostream> 
- #include <cstdlib> 
+#include <iostream>
+#include <cstdlib>
  using namespace std; 
- main() 
+ int main() 
  { 
  int peras, frutas; 
   system("CLS"); 
@@ -13,4 +13,5 @@
   cout << "\nperas ++ = "<<peras++; 
   cout << "\nperas -- ="<<peras--; 
   cout << "\nperas = " <<peras;
+  return 0;
  }
