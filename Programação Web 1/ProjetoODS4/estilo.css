@@ -1,66 +1,170 @@
-
-body{
+* {
     margin: 0;
     padding: 0;
-    background-color: #ddffe7;
+    box-sizing: border-box;
 }
-.fundoI{
-    background-image: url("imagemods1.jpg");
-    background-size: 100%;
-    padding-bottom: 7%;
-    background-position: 200px;
-}
-header{
-    display: flex;
-    margin: 0;
-}
-.logo img{
-    display: flex;
-    width: 85px;
-    height: 85px;
-    padding: 1% 25%;
-    padding-bottom: 20%;
-    padding-top: 20%;
-    margin-left: 10%;
-    margin-top: 10%;
-    background-color: #0b3c5d;
-    border-radius: 100%;
 
+body {
+    background-color: #ddffe7;
+    font-family: 'Lucida Sans Unicode', 'Segoe UI', sans-serif;
 }
-nav{
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-image: var(--topo-bg);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 2% 7%;
+}
+
+header.topo-introducao {
+    --topo-bg: url("imagemods1.jpg");
+}
+
+header.topo-ods {
+    --topo-bg: url("imagemods1.jpg");
+}
+
+header.topo-causas {
+    --topo-bg: url("imagemods1.jpg");
+}
+
+header.topo-consequencias {
+    --topo-bg: url("imagemods1.jpg");
+}
+
+header.topo-reflexao {
+    --topo-bg: url("imagemods1.jpg");
+}
+
+header.topo-formulario {
+    --topo-bg: url("imagemods1.jpg");
+}
+
+header img {
+    width: clamp(70px, 10vw, 100px);
+    height: clamp(70px, 10vw, 100px);
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #0b3c5d;
+    display: block;
+    flex-shrink: 0;
+}
+
+nav {
+    flex: 1;
     margin-left: 5%;
     margin-right: 3%;
     margin-top: 1%;
 }
-.barradenavegacao{
-    display: flex;
-    background-color: #0b3c5d;
-    width: 86%;
-    height: 60px;
-    border-radius: 100px;
-    ul{
-        display: flex;
-        text-decoration: none;
-        padding: 0.1% 20%;
-        text-align: center;
-}
-    a{
-        text-decoration: none;
-        color: white;
-        font-family:'Lucida Sans Unicode';
-        padding: 0rem 0.7rem;
-        display: block;
-    }
-    a:hover { 
-        color: rgb(93, 221, 93);
-    }
-    li{
 
-        list-style: none;
-    } 
+.barradenavegacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b3c5d;
+    width: min(86%, 1100px);
+    min-height: 60px;
+    border-radius: 100px;
+    margin: 0 auto;
 }
-.tituloI{
+
+.barradenavegacao ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
+    margin: 0;
     text-align: center;
+}
+
+.barradenavegacao a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans Unicode', 'Segoe UI', sans-serif;
+    padding: 0.5rem 0.8rem;
+    display: block;
+}
+
+.barradenavegacao a:hover {
+    color: rgb(93, 221, 93);
+}
+
+.barradenavegacao li {
+    list-style: none;
+}
+
+.titulo-pagina {
+    display: inline-block;
+    flex-basis: 100%;
+    width: fit-content;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.8rem 1.2rem;
+    color: #f2fbff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 14px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
+    font-size: clamp(1.6rem, 2vw, 2.6rem);
+    background-color: rgba(12, 60, 93, 0.38);
+}
+
+.aquecimento-global {
+    padding: 2rem 5%;
+}
+
+.textoI {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.textoI p {
+    margin: 0;
+    line-height: 1.6;
+    text-align: justify;
+    color: #1a1a1a;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    nav {
+        width: 100%;
+        margin: 0;
+    }
+
+    .barradenavegacao {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .barradenavegacao ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .barradenavegacao a {
+        width: 100%;
+    }
+
+    .titulo-pagina {
+        font-size: 1.4rem;
+    }
 }
 
 
