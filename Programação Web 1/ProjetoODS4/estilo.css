@@ -50,7 +50,6 @@ header img {
     height: clamp(70px, 10vw, 100px);
     border-radius: 50%;
     object-fit: cover;
-    background-color: #0b3c5d;
     display: block;
     flex-shrink: 0;
 }
@@ -117,7 +116,7 @@ nav {
     background-color: rgba(12, 60, 93, 0.38);
 }
 
-.aquecimento-global {
+.introducao {
     padding: 2rem 5%;
 }
 
