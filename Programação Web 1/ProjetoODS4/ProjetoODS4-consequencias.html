@@ -7,27 +7,78 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <!-- Cabecalho e navegacao -->
     <header class="topo-consequencias">
-        <img src="EcoPolo.png" title="Logo EcoPolo" alt="logo EcoPolo">
+        <div class="linha-cabecalho">
+            <img src="EcoPolo.png" title="Logo EcoPolo" alt="logo EcoPolo">
 
-        <nav class="barradenavegacao">
-            <ul>
-                <li><a href="ProjetoODS4.html">Introdução</a></li>
-                <li><a href="ProjetoODS4-ods.html">ODS</a></li>
-                <li><a href="ProjetoODS4-causas.html">Causas</a></li>
-                <li><a href="ProjetoODS4-consequencias.html">Consequências</a></li>
-                <li><a href="ProjetoODS4-reflexaoepropostas.html">Reflexão & Propostas</a></li>
-                <li><a href="ProjetoODS4-formulariodeacao.html">Formulário de Ação</a></li>
-            </ul>
-        </nav>
+            <nav class="barradenavegacao">
+                <ul>
+                    <li><a href="ProjetoODS4.html">Introdução</a></li>
+                    <li><a href="ProjetoODS4-ods.html">ODS</a></li>
+                    <li><a href="ProjetoODS4-causas.html">Causas</a></li>
+                    <li><a href="ProjetoODS4-consequencias.html">Consequências</a></li>
+                    <li><a href="ProjetoODS4-reflexaoepropostas.html">Reflexão & Propostas</a></li>
+                    <li><a href="ProjetoODS4-formulariodeacao.html">Formulário de Ação</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <h1 class="titulo-pagina titulo-consequencias">Consequências do Aquecimento Global</h1>
     </header>
 
-    <main class="conteudo-pagina">
-        <div class="textoI">
-            <p>As consequências do aquecimento global incluem derretimento das calotas polares, aumento do nível do mar, secas, enchentes, ondas de calor, extinção de espécies e impactos na saúde humana. Essas mudanças afetam diretamente ecossistemas e a qualidade de vida de comunidades ao redor do mundo.</p>
-        </div>
+    <!-- Conteudo principal -->
+    <main class="conteudo-pagina pagina-consequencias">
+        <!-- Apresentacao e imagem -->
+        <section class="destaque-pagina imagem-esquerda">
+            <section class="apresentacao">
+                <h2>Impactos que atravessam oceanos e continentes</h2>
+                <p>As consequências aparecem em ritmos e intensidades diferentes, mas estão conectadas. A região polar aquece rapidamente, e as mudanças no gelo e no oceano afetam a natureza e as pessoas muito além dos polos.</p>
+            </section>
+            <figure class="imagem-corpo">
+                <img src="pinguins-antartida.jpg" alt="Grupo de pinguins sobre a neve junto ao mar na Antártida">
+                <figcaption>Pinguins vivem no Hemisfério Sul e dependem dos ecossistemas antárticos. Foto: <a href="https://unsplash.com/photos/group-of-penguins-standing-on-white-snow-covered-ground-near-body-of-water-during-daytime-12R_znWtJHQ" target="_blank" rel="noopener">Dylan Shaw / Unsplash</a>.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Consequencias para polos, oceanos e comunidades -->
+        <section class="grade-temas" aria-label="Consequências do aquecimento global nos polos e oceanos">
+            <article class="cartao-tema">
+                <h3>Gelo terrestre e nível do mar</h3>
+                <p>A perda de gelo continental da Groenlândia e da Antártida acrescenta água aos oceanos. O aquecimento também expande a água do mar. Já o derretimento do gelo marinho flutuante não eleva diretamente o nível do mar na mesma proporção.</p>
+            </article>
+
+            <article class="cartao-tema">
+                <h3>Habitat e alimento da fauna</h3>
+                <p>O encolhimento e a fragmentação do gelo marinho mudam áreas de caça e descanso de espécies do Ártico. No oceano Austral, alterações na temperatura e no gelo podem afetar krill, peixes, focas e as espécies que dependem deles.</p>
+            </article>
+
+            <article class="cartao-tema">
+                <h3>Oceanos em mudança</h3>
+                <p>O mar mais quente e a elevação do nível da água pressionam ecossistemas costeiros. O excesso de dióxido de carbono também altera a química do oceano, dificultando a formação de conchas e estruturas de organismos marinhos.</p>
+            </article>
+
+            <article class="cartao-tema">
+                <h3>Comunidades costeiras</h3>
+                <p>Elevação do mar, erosão e eventos extremos podem danificar moradias, infraestrutura e fontes de água doce. Comunidades com menos recursos para adaptação tendem a enfrentar riscos maiores.</p>
+            </article>
+        </section>
+
+        <!-- Dados sobre o nivel do mar -->
+        <section class="dado-cientifico">
+            <h2>O nível do mar em números</h2>
+            <p>Segundo a NASA, o nível médio global do mar subiu cerca de <strong>10 centímetros entre 1993 e 2023</strong>. O mesmo aumento havia levado aproximadamente 90 anos, de 1902 a 1992. A NASA estima que o aquecimento da água explica cerca de um terço da elevação recente e o derretimento de gelo terrestre, cerca de dois terços.</p>
+            <p>O derretimento do gelo marinho que já flutua no oceano não eleva o nível do mar da mesma forma que o gelo de geleiras sobre a terra. Essa diferença é importante para entender o impacto real do degelo polar.</p>
+            <p class="referencia-fonte">Fonte: <a href="https://sealevel.nasa.gov/understanding-sea-level/global-sea-level/overview/" target="_blank" rel="noopener">NASA Sea Level Change, dados de 1993–2023</a>.</p>
+        </section>
     </main>
+
+    <!-- Identificacao do trabalho -->
+    <footer class="rodape">
+        <p><strong>Integrantes:</strong> Victor Andrade e Maria Paula Teixeira de Castro</p>
+        <p><strong>Escola:</strong> Etec Jorge Street - 1GT</p>
+        <p><strong>Matéria:</strong> Programação Web 1</p>
+        <p><strong>E-mail:</strong> <a href="mailto:victorandrade20110906@gmail.com">victorandrade20110906@gmail.com</a></p>
+    </footer>
 </body>
 </html>

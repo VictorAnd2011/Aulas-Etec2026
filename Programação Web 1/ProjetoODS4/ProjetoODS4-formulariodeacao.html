@@ -7,27 +7,106 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <!-- Cabecalho e navegacao -->
     <header class="topo-formulario">
-        <img src="EcoPolo.png" title="Logo EcoPolo" alt="logo EcoPolo">
+        <div class="linha-cabecalho">
+            <img src="EcoPolo.png" title="Logo EcoPolo" alt="logo EcoPolo">
 
-        <nav class="barradenavegacao">
-            <ul>
-                <li><a href="ProjetoODS4.html">Introdução</a></li>
-                <li><a href="ProjetoODS4-ods.html">ODS</a></li>
-                <li><a href="ProjetoODS4-causas.html">Causas</a></li>
-                <li><a href="ProjetoODS4-consequencias.html">Consequências</a></li>
-                <li><a href="ProjetoODS4-reflexaoepropostas.html">Reflexão & Propostas</a></li>
-                <li><a href="ProjetoODS4-formulariodeacao.html">Formulário de Ação</a></li>
-            </ul>
-        </nav>
+            <nav class="barradenavegacao">
+                <ul>
+                    <li><a href="ProjetoODS4.html">Introdução</a></li>
+                    <li><a href="ProjetoODS4-ods.html">ODS</a></li>
+                    <li><a href="ProjetoODS4-causas.html">Causas</a></li>
+                    <li><a href="ProjetoODS4-consequencias.html">Consequências</a></li>
+                    <li><a href="ProjetoODS4-reflexaoepropostas.html">Reflexão & Propostas</a></li>
+                    <li><a href="ProjetoODS4-formulariodeacao.html">Formulário de Ação</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <h1 class="titulo-pagina titulo-formulario">Formulário de Ação</h1>
     </header>
 
-    <main class="conteudo-pagina">
-        <div class="textoI">
-            <p>Este espaço pode ser usado para receber ideias, sugestões e propostas de ações sustentáveis. O objetivo é incentivar a participação da comunidade na construção de soluções para reduzir os impactos ambientais.</p>
-        </div>
+    <!-- Conteudo principal -->
+    <main class="conteudo-pagina pagina-formulario">
+        <!-- Apresentacao e simbolos das ODS -->
+        <section class="destaque-pagina imagem-esquerda">
+            <section class="apresentacao">
+                <h2>Da reflexão à ação</h2>
+                <p>Enfrentar o aquecimento global exige escolhas individuais e compromissos coletivos. Estas propostas se relacionam às ODS 13 e 14 e podem ser adaptadas à realidade da escola e da comunidade.</p>
+            </section>
+            <figure class="imagem-corpo">
+                <div class="imagens-ods">
+                    <img class="icone-ods" src="ods-13.jpg" alt="Símbolo da ODS 13: Ação Climática">
+                    <img class="icone-ods" src="ods-14.jpg" alt="Símbolo da ODS 14: Vida na Água">
+                </div>
+                <figcaption>As propostas desta página se relacionam às metas da ONU de ação climática e proteção dos oceanos.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Ideias para a comunidade -->
+        <section class="grade-temas" aria-label="Ideias de ações para a comunidade">
+            <article class="cartao-tema">
+                <h3>Na escola</h3>
+                <p>Organizar uma campanha de economia de energia, mapear o descarte de resíduos ou preparar uma exposição sobre o degelo e a fauna polar com informações de fontes científicas.</p>
+            </article>
+
+            <article class="cartao-tema">
+                <h3>Na comunidade</h3>
+                <p>Promover mutirões de limpeza em espaços públicos, reduzir o uso de descartáveis em eventos e compartilhar orientações sobre consumo responsável e proteção dos cursos d'água.</p>
+            </article>
+
+            <article class="cartao-tema">
+                <h3>Como acompanhar</h3>
+                <p>Definir uma meta, registrar o que foi feito e observar os resultados ajuda a manter as ações ativas. Uma proposta pode ser simples, desde que seja possível colocá-la em prática e avaliar seu impacto.</p>
+            </article>
+        </section>
+
+        <!-- Dados e fonte -->
+        <section class="dado-cientifico">
+            <h2>Por que a participação importa?</h2>
+            <p>O IPCC destaca que a redução rápida e contínua das emissões pode diminuir os riscos futuros. Informar-se, compartilhar fontes confiáveis e apoiar soluções coletivas são formas de aproximar o conhecimento científico das decisões do dia a dia.</p>
+            <p class="referencia-fonte">Fonte: <a href="https://www.ipcc.ch/report/ar6/syr/resources/spm-headline-statements/" target="_blank" rel="noopener">IPCC, Relatório de Síntese (2023), afirmação C.2</a>.</p>
+        </section>
+
+        <!-- Formulario demonstrativo -->
+        <section class="bloco-formulario" aria-labelledby="titulo-formulario">
+            <h2 id="titulo-formulario">Receba atualizações do projeto</h2>
+            <p class="aviso-formulario">Formulário demonstrativo: as informações preenchidas não serão enviadas nem armazenadas.</p>
+            <form id="formulario-atualizacoes" autocomplete="off">
+                <div class="campo-formulario">
+                    <label for="nome-completo">Nome completo</label>
+                    <input type="text" id="nome-completo" name="nome-completo" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="data-nascimento">Data de nascimento</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="nivel-conhecimento">Seu nível de conhecimento sobre problemas climáticos</label>
+                    <input type="range" id="nivel-conhecimento" name="nivel-conhecimento" min="1" max="5" value="3">
+                </div>
+                <div class="campo-formulario">
+                    <label for="comentario">O que você pensa sobre o aquecimento global?</label>
+                    <textarea id="comentario" name="comentario" rows="5" maxlength="500"></textarea>
+                </div>
+                <button class="botao-formulario" type="button">Concluir</button>
+                <button class="botao-formulario botao-limpar" type="reset">Limpar informações</button>
+                <p class="mensagem-formulario" id="mensagem-formulario" role="status" aria-live="polite"></p>
+            </form>
+        </section>
     </main>
+
+    <!-- Identificacao do trabalho -->
+    <footer class="rodape">
+        <p><strong>Integrantes:</strong> Victor Andrade e Maria Paula Teixeira de Castro</p>
+        <p><strong>Escola:</strong> Etec Jorge Street - 1GT</p>
+        <p><strong>Matéria:</strong> Programação Web 1</p>
+        <p><strong>E-mail:</strong> <a href="mailto:victorandrade20110906@gmail.com">victorandrade20110906@gmail.com</a></p>
+    </footer>
 </body>
 </html>

@@ -7,27 +7,77 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <!-- Cabecalho e navegacao -->
     <header class="topo-causas">
-        <img src="EcoPolo.png" title="Logo EcoPolo" alt="logo EcoPolo">
+        <div class="linha-cabecalho">
+            <img src="EcoPolo.png" title="Logo EcoPolo" alt="logo EcoPolo">
 
-        <nav class="barradenavegacao">
-            <ul>
-                <li><a href="ProjetoODS4.html">Introdução</a></li>
-                <li><a href="ProjetoODS4-ods.html">ODS</a></li>
-                <li><a href="ProjetoODS4-causas.html">Causas</a></li>
-                <li><a href="ProjetoODS4-consequencias.html">Consequências</a></li>
-                <li><a href="ProjetoODS4-reflexaoepropostas.html">Reflexão & Propostas</a></li>
-                <li><a href="ProjetoODS4-formulariodeacao.html">Formulário de Ação</a></li>
-            </ul>
-        </nav>
+            <nav class="barradenavegacao">
+                <ul>
+                    <li><a href="ProjetoODS4.html">Introdução</a></li>
+                    <li><a href="ProjetoODS4-ods.html">ODS</a></li>
+                    <li><a href="ProjetoODS4-causas.html">Causas</a></li>
+                    <li><a href="ProjetoODS4-consequencias.html">Consequências</a></li>
+                    <li><a href="ProjetoODS4-reflexaoepropostas.html">Reflexão & Propostas</a></li>
+                    <li><a href="ProjetoODS4-formulariodeacao.html">Formulário de Ação</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <h1 class="titulo-pagina titulo-causas">Causas do Aquecimento Global</h1>
     </header>
 
-    <main class="conteudo-pagina">
-        <div class="textoI">
-            <p>As principais causas do aquecimento global estão relacionadas à queima de combustíveis fósseis, ao desmatamento, ao aumento das emissões de gases de efeito estufa e à industrialização acelerada. Esses fatores elevam a temperatura média do planeta e provocam mudanças climáticas em todo o mundo.</p>
-        </div>
+    <!-- Conteudo principal -->
+    <main class="conteudo-pagina pagina-causas">
+        <!-- Apresentacao e imagem -->
+        <section class="destaque-pagina">
+            <section class="apresentacao">
+                <h2>De onde vem o aquecimento?</h2>
+                <p>O efeito estufa natural mantém a Terra habitável. O problema é sua intensificação pelo aumento rápido de gases que retêm calor na atmosfera, principalmente devido a atividades humanas.</p>
+            </section>
+            <figure class="imagem-corpo">
+                <img src="energia-eolica.jpg" alt="Parque de turbinas eólicas em um campo ao pôr do sol">
+                <figcaption>Expandir fontes de energia de baixa emissão é uma das formas de reduzir a dependência de combustíveis fósseis. Foto: <a href="https://unsplash.com/photos/windmill-on-grass-field-during-golden-hour-0w-uTa0Xz7w" target="_blank" rel="noopener">Karsten Würth / Unsplash</a>.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Principais causas -->
+        <section class="grade-temas" aria-label="Principais causas do aquecimento global">
+            <article class="cartao-tema">
+                <h3>Combustíveis fósseis</h3>
+                <p>A queima de carvão, petróleo e gás para gerar eletricidade, movimentar transportes e produzir bens libera dióxido de carbono. É uma das principais fontes de emissões que impulsionam o aquecimento global.</p>
+            </article>
+
+            <article class="cartao-tema">
+                <h3>Desmatamento e uso da terra</h3>
+                <p>Quando florestas são derrubadas ou queimadas, parte do carbono armazenado é liberada e diminui a capacidade de retirar dióxido de carbono do ar. A mudança no uso da terra também fragmenta habitats.</p>
+            </article>
+
+            <article class="cartao-tema">
+                <h3>Agricultura e produção</h3>
+                <p>Algumas atividades agropecuárias liberam metano e óxido nitroso, enquanto processos industriais e o consumo de energia também geram emissões. Produzir e desperdiçar mais do que o necessário amplia a pressão sobre o clima.</p>
+            </article>
+
+            <article class="cartao-tema">
+                <h3>Um ciclo que se reforça</h3>
+                <p>O aquecimento reduz áreas de neve e gelo que refletem a luz solar. Com menos superfície clara, mais energia é absorvida pelo oceano e pelo solo, o que pode intensificar o aquecimento regional nos polos.</p>
+            </article>
+        </section>
+
+        <!-- Dados e fonte -->
+        <section class="dado-cientifico">
+            <h2>O papel das emissões</h2>
+            <p>O IPCC concluiu que a influência humana causou o aquecimento observado e que as emissões vêm principalmente da energia, do transporte, da indústria e das mudanças no uso da terra. Por isso, enfrentar as causas exige mudanças em sistemas de produção e também em políticas públicas, não apenas escolhas individuais.</p>
+            <p class="referencia-fonte">Fonte: <a href="https://www.ipcc.ch/report/ar6/syr/resources/spm-headline-statements/" target="_blank" rel="noopener">IPCC, Relatório de Síntese (2023), afirmação A.1</a>.</p>
+        </section>
     </main>
+
+    <!-- Identificacao do trabalho -->
+    <footer class="rodape">
+        <p><strong>Integrantes:</strong> Victor Andrade e Maria Paula Teixeira de Castro</p>
+        <p><strong>Escola:</strong> Etec Jorge Street - 1GT</p>
+        <p><strong>Matéria:</strong> Programação Web 1</p>
+        <p><strong>E-mail:</strong> <a href="mailto:victorandrade20110906@gmail.com">victorandrade20110906@gmail.com</a></p>
+    </footer>
 </body>
 </html>
