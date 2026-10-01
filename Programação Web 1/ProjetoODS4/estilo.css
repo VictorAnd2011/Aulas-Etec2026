@@ -5,165 +5,438 @@
 }
 
 body {
-    background-color: #ddffe7;
+    background-color: #edf2e9;
     font-family: 'Lucida Sans Unicode', 'Segoe UI', sans-serif;
 }
 
+/* Cabecalho */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-    background-image: var(--topo-bg);
+    min-height: 320px;
+    padding: 12px 3% 20px;
+    background-color: #176d73;
     background-size: cover;
     background-position: center;
-    padding: 1rem 2% 7%;
 }
 
 header.topo-introducao {
-    --topo-bg: url("imagemods1.jpg");
+    background-image: url("imagemods1.jpg");
 }
 
 header.topo-ods {
-    --topo-bg: url("imagemods1.jpg");
+    background-image: url("banner-ods.jpg");
 }
 
 header.topo-causas {
-    --topo-bg: url("imagemods1.jpg");
+    background-image: url("banner-causas.jpg");
 }
 
 header.topo-consequencias {
-    --topo-bg: url("imagemods1.jpg");
+    background-image: url("banner-consequencias.jpg");
 }
 
 header.topo-reflexao {
-    --topo-bg: url("imagemods1.jpg");
+    background-image: url("banner-reflexao.jpg");
 }
 
 header.topo-formulario {
-    --topo-bg: url("imagemods1.jpg");
+    background-image: url("banner-formulario.jpg");
+    background-position: center 46%;
 }
 
-header img {
-    width: clamp(70px, 10vw, 100px);
-    height: clamp(70px, 10vw, 100px);
+.linha-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.linha-cabecalho img {
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
-    display: block;
-    flex-shrink: 0;
 }
 
 nav {
     flex: 1;
-    margin-left: 5%;
-    margin-right: 3%;
-    margin-top: 1%;
 }
 
 .barradenavegacao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #0b3c5d;
-    width: min(86%, 1100px);
-    min-height: 60px;
-    border-radius: 100px;
+    width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: #0b3c5d;
 }
 
 .barradenavegacao ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     list-style: none;
-    gap: 0.5rem 1rem;
-    padding: 0.7rem 1rem;
-    margin: 0;
-    text-align: center;
+    gap: 8px 16px;
 }
 
 .barradenavegacao a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Lucida Sans Unicode', 'Segoe UI', sans-serif;
-    padding: 0.5rem 0.8rem;
     display: block;
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
 }
 
 .barradenavegacao a:hover {
-    color: rgb(93, 221, 93);
-}
-
-.barradenavegacao li {
-    list-style: none;
+    color: #5ddd5d;
 }
 
 .titulo-pagina {
-    display: inline-block;
-    flex-basis: 100%;
-    width: fit-content;
+    display: table;
     max-width: 100%;
+    margin: 16px auto 0;
+    padding: 12px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    background-color: rgba(12, 60, 93, 0.75);
+    color: white;
+    font-size: 32px;
     text-align: center;
-    margin: 0 auto;
-    padding: 0.8rem 1.2rem;
-    color: #f2fbff;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    border-radius: 14px;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
-    font-size: clamp(1.6rem, 2vw, 2.6rem);
-    background-color: rgba(12, 60, 93, 0.38);
 }
 
+/* Conteudo das paginas */
+.conteudo-pagina,
 .introducao {
-    padding: 2rem 5%;
+    padding-bottom: 48px;
 }
 
-.textoI {
-    max-width: 1000px;
-    margin: 0 auto;
+.destaque-pagina {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    padding: 16px;
+    background-color: #e1ecdc;
 }
 
-.textoI p {
-    margin: 0;
+.destaque-pagina .apresentacao,
+.destaque-pagina .imagem-corpo {
+    width: 50%;
+}
+
+.imagem-esquerda {
+    flex-direction: row-reverse;
+}
+
+.pagina-ods .destaque-pagina {
+    background-color: #dcebed;
+}
+
+.pagina-causas .destaque-pagina {
+    background-color: #f2e1dc;
+}
+
+.pagina-consequencias .destaque-pagina {
+    background-color: #e1eaf0;
+}
+
+.pagina-reflexao .destaque-pagina {
+    background-color: #e2ead9;
+}
+
+.pagina-formulario .destaque-pagina {
+    background-color: #f0ead9;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+}
+
+.apresentacao h2,
+.cartao-tema h3 {
+    margin-bottom: 8px;
+    color: #0b5960;
+}
+
+.pagina-introducao .cartao-tema:nth-child(3) h3,
+.pagina-reflexao .cartao-tema:nth-child(2) h3 {
+    color: #34714d;
+}
+
+.pagina-causas .cartao-tema h3 {
+    color: #9a5147;
+}
+
+.pagina-ods .cartao-tema h3,
+.pagina-consequencias .cartao-tema h3 {
+    color: #306e80;
+}
+
+.apresentacao p,
+.cartao-tema p,
+.bloco-formulario p {
+    color: #293b38;
+    line-height: 1.7;
+}
+
+.imagem-corpo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6px 6px;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: #d3e3d2;
+}
+
+.pagina-ods .imagem-corpo {
+    background-color: #cde2e3;
+}
+
+.pagina-causas .imagem-corpo {
+    background-color: #ead4cd;
+}
+
+.pagina-consequencias .imagem-corpo {
+    background-color: #d1e0e9;
+}
+
+.pagina-reflexao .imagem-corpo {
+    background-color: #d6e2cb;
+}
+
+.pagina-formulario .imagem-corpo {
+    background-color: #e7dfc9;
+}
+
+.imagem-corpo img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.imagem-corpo .imagem-dados {
+    background-color: white;
+    object-fit: contain;
+}
+
+.imagens-ods {
+    display: flex;
+    min-height: 320px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.imagem-corpo .icone-ods {
+    width: 42%;
+    max-width: 210px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.imagem-corpo figcaption {
+    padding: 10px 16px;
+    color: #304541;
+    line-height: 1.5;
+}
+
+.imagem-corpo figcaption a,
+.citacao-ipcc a,
+.dado-cientifico a {
+    color: #0b5960;
+    font-weight: bold;
+}
+
+/* Topicos, dados e fontes */
+.grade-temas {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao-tema {
+    padding: 24px 8%;
+    border-bottom: 1px solid #c8d3c8;
+    background-color: #dce9d8;
+}
+
+.cartao-tema:nth-child(2) {
+    background-color: #d9e8ed;
+    text-align: right;
+}
+
+.cartao-tema:nth-child(3) {
+    background-color: #efe4d0;
+}
+
+.cartao-tema:nth-child(4) {
+    background-color: #eedbd7;
+    text-align: right;
+}
+
+.citacao-ipcc,
+.dado-cientifico {
+    padding: 24px 8%;
+    background-color: #f1e2c8;
+}
+
+.citacao-ipcc h2,
+.dado-cientifico h2 {
+    margin-bottom: 10px;
+    color: #795338;
+}
+
+.citacao-ipcc p,
+.dado-cientifico p {
+    margin: 8px 0;
+    color: #293b38;
     line-height: 1.6;
-    text-align: justify;
-    color: #1a1a1a;
 }
 
-@media (max-width: 900px) {
+.citacao-ipcc blockquote {
+    margin: 14px 0;
+    padding-left: 16px;
+    color: #4c4234;
+    font-weight: bold;
+}
+
+.referencia-fonte {
+    font-size: 14px;
+}
+
+/* Formulario */
+.bloco-formulario {
+    margin-top: 16px;
+    padding: 32px 8%;
+    background-color: #e7dfc9;
+}
+
+.bloco-formulario h2 {
+    margin-bottom: 8px;
+    color: #795338;
+}
+
+.aviso-formulario {
+    margin-bottom: 24px;
+}
+
+.campo-formulario {
+    margin-bottom: 20px;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    color: #293b38;
+    font-weight: bold;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #789a98;
+    border-radius: 4px;
+    background-color: white;
+    font: inherit;
+}
+
+.campo-formulario input[type="range"] {
+    padding: 0;
+    accent-color: #168b83;
+}
+
+.botao-formulario {
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #0b5960;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+.botao-limpar {
+    margin-left: 8px;
+    background-color: #596962;
+}
+
+.mensagem-formulario {
+    min-height: 28px;
+    margin-top: 16px;
+    color: #0b5960;
+    font-weight: bold;
+}
+
+/* Rodape */
+.rodape {
+    padding: 24px 8%;
+    background-color: #294d48;
+    color: #f4f5e9;
+    text-align: center;
+}
+
+.rodape p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.rodape a {
+    color: white;
+}
+
+/* Celular */
+@media (max-width: 600px) {
     header {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding-bottom: 2rem;
+        min-height: 0;
     }
 
-    nav {
-        width: 100%;
-        margin: 0;
+    .linha-cabecalho {
+        gap: 10px;
+    }
+
+    .linha-cabecalho img {
+        width: 58px;
+        height: 58px;
     }
 
     .barradenavegacao {
-        width: 100%;
-        border-radius: 20px;
+        border-radius: 12px;
     }
-}
 
-@media (max-width: 600px) {
     .barradenavegacao ul {
         flex-direction: column;
-        width: 100%;
-    }
-
-    .barradenavegacao a {
-        width: 100%;
     }
 
     .titulo-pagina {
-        font-size: 1.4rem;
+        font-size: 24px;
+    }
+
+    .destaque-pagina {
+        display: block;
+    }
+
+    .destaque-pagina .apresentacao,
+    .destaque-pagina .imagem-corpo {
+        width: 100%;
+    }
+
+    .imagem-corpo img {
+        height: 220px;
+    }
+
+    .imagens-ods {
+        min-height: 220px;
+    }
+
+    .cartao-tema:nth-child(2),
+    .cartao-tema:nth-child(4) {
+        text-align: left;
+    }
+
+    .botao-limpar {
+        margin: 8px 0 0;
     }
 }
-
-

@@ -7,34 +7,79 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-   
+    <!-- Cabecalho e navegacao -->
+    <header class="topo-introducao">
+        <div class="linha-cabecalho">
+            <img src="EcoPolo.png" title="Logo EcoPolo" alt="logo EcoPolo">
 
-<header class="topo-introducao">
-
-    <img src="EcoPolo.png" title="Logo EcoPolo" alt="logo EcoPolo">
-
-    <nav class="barradenavegacao">
-            <ul>
-                <li><a href="ProjetoODS4.html">Introdução</a></li>
-                <li><a href="ProjetoODS4-ods.html">ODS</a></li>
-                <li><a href="ProjetoODS4-causas.html">Causas</a></li>
-                <li><a href="ProjetoODS4-consequencias.html">Consequências</a></li>
-                <li><a href="ProjetoODS4-reflexaoepropostas.html">Reflexão & Propostas</a></li>
-                <li><a href="ProjetoODS4-formulariodeacao.html">Formulário de Ação</a></li>
-            </ul>
-    </nav>
+            <nav class="barradenavegacao">
+                <ul>
+                    <li><a href="ProjetoODS4.html">Introdução</a></li>
+                    <li><a href="ProjetoODS4-ods.html">ODS</a></li>
+                    <li><a href="ProjetoODS4-causas.html">Causas</a></li>
+                    <li><a href="ProjetoODS4-consequencias.html">Consequências</a></li>
+                    <li><a href="ProjetoODS4-reflexaoepropostas.html">Reflexão & Propostas</a></li>
+                    <li><a href="ProjetoODS4-formulariodeacao.html">Formulário de Ação</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <h1 class="titulo-pagina titulo-introducao">O Problema do Aquecimento Global & Polos</h1>
-    
-</header>
+    </header>
 
+    <!-- Conteudo principal -->
+    <main class="introducao pagina-introducao">
+        <!-- Apresentacao e infografico -->
+        <section class="destaque-pagina">
+            <section class="apresentacao">
+                <h2>Um planeta em transformação</h2>
+                <p>O projeto <strong>Aquecimento Global &amp; Polos</strong> explica como o aumento da temperatura média do planeta acelera o degelo, modifica os oceanos e ameaça ecossistemas. O foco está nas regiões polares, mas os efeitos chegam a comunidades costeiras e à vida de todos nós.</p>
+            </section>
+            <figure class="imagem-corpo">
+                <img class="imagem-dados" src="dados-nivel-do-mar-nasa.jpeg" alt="Infográfico da NASA explica como o aquecimento do oceano e o derretimento de geleiras elevam o nível do mar">
+                <figcaption>O aquecimento expande a água do mar e o derretimento de geleiras terrestres acrescenta água aos oceanos. <a href="https://sealevel.nasa.gov/understanding-sea-level/global-sea-level/overview/" target="_blank" rel="noopener">Infográfico: NASA</a>.</figcaption>
+            </figure>
+        </section>
 
-    <main class="Introducao">
-        <div class="textoI">
-            <p>O aquecimento global e a poluição são  problemas que afetam todo o mundo nos dias atuais, afetando clima, chuvas, 
-            saúde da população e da vida selvagem. Todos os países do mundo devem se juntar para combater o mal eminente que esses 
-            problemas representam para a sociedade e para toda a vida na terra.</p>
-        </div>
+        <!-- Dados cientificos -->
+        <section class="citacao-ipcc">
+            <h2>O que dizem os cientistas</h2>
+            <p>O IPCC estima que, entre 2011 e 2020, a temperatura média da superfície do planeta ficou cerca de <strong>1,1 °C acima do período de 1850 a 1900</strong>.</p>
+            <blockquote>“As atividades humanas causaram inequivocamente o aquecimento global.” <cite>IPCC, 2023</cite></blockquote>
+            <p>Esse dado ajuda a entender por que reduzir emissões é importante: quanto maior o aquecimento, maiores tendem a ser os riscos para o gelo, os oceanos e as comunidades.</p>
+            <p class="referencia-fonte">Fonte: <a href="https://www.ipcc.ch/report/ar6/syr/resources/spm-headline-statements/" target="_blank" rel="noopener">IPCC, Relatório de Síntese do Sexto Ciclo (2023)</a>.</p>
+        </section>
+
+        <!-- Temas do projeto -->
+        <section class="grade-temas" aria-label="Resumo dos temas do projeto">
+            <article class="cartao-tema">
+                <h3>Degelo das calotas polares</h3>
+                <p>O aquecimento do ar e dos oceanos reduz geleiras e mantos de gelo da Groenlândia e da Antártida. O gelo terrestre que chega ao mar contribui para a elevação do nível dos oceanos.</p>
+            </article>
+
+            <article class="cartao-tema">
+                <h3>Mares em elevação</h3>
+                <p>Além da perda de gelo continental, a água do mar se expande quando aquece. A combinação dessas mudanças aumenta riscos de erosão, alagamentos e intrusão de água salgada em áreas costeiras.</p>
+            </article>
+
+            <article class="cartao-tema">
+                <h3>Fauna polar em risco</h3>
+                <p>A redução do gelo marinho altera habitats e o acesso a alimento. Ursos-polares dependem do gelo do Ártico para caçar; pinguins vivem no Hemisfério Sul e também enfrentam mudanças no ambiente e na disponibilidade de presas.</p>
+            </article>
+
+            <article class="cartao-tema">
+                <h3>Ação pelo clima e pelos oceanos</h3>
+                <p>A ODS 13 propõe enfrentar a mudança do clima. A ODS 14 busca conservar os oceanos e seus recursos. As duas se conectam na proteção das regiões polares e da vida marinha.</p>
+            </article>
+        </section>
     </main>
+
+    <!-- Identificacao do trabalho -->
+    <footer class="rodape">
+        <p><strong>Integrantes:</strong> Victor Andrade e Maria Paula Teixeira de Castro</p>
+        <p><strong>Escola:</strong> Etec Jorge Street - 1GT</p>
+        <p><strong>Matéria:</strong> Programação Web 1</p>
+        <p><strong>E-mail:</strong> <a href="mailto:victorandrade20110906@gmail.com">victorandrade20110906@gmail.com</a></p>
+    </footer>
 </body>
 </html>
