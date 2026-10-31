@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- a melhor forma de colocar uma entrada de dados é com o input -->
+    <input type="number" id="num1" placeholder="Primeiro número">
+    <input type="number" id="num2" placeholder="Segundo número">
+    <button id='btnSoma'>Calcular a SOMA</button>
+    <p id='resultado'></p>
+    <script>
+        //para pegarmos dados do html, usamos o querySelector
+        //nós colocamos uma variável para representar a tag
+        //e dps nós colocamos a tag que deseja ser lida
+        let num1 = document.querySelector('#num1');
+        let num2 = document.querySelector('#num2');
+        let btnSoma = document.querySelector('#btnSoma');
+        let resultado = document.querySelector('#resultado');
+
+        btnSoma.addEventListener('click', function(){
+            //quando o botão for chamado, ele chama uma função que lê o valor dos inputs, soma eles e coloca a tag resultado sendo igual a soma
+            let n1 = Number(num1.value);
+            let n2 = Number(num2.value);
+            let soma = n1 + n2;
+            resultado.innerText = 'O resultado da soma é: ' + soma;
+        });
+    </script>
+</body>
+</html>

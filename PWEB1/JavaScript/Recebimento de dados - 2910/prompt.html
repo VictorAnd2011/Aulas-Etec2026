@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let cria uma variável
+        // prompt é uma função que coloca um alerta junto com um input de dados
+
+        let nome = prompt('Qual é o seu nome?');
+        alert("Bom dia " + nome);
+      
+        let curso = prompt('Qual é o seu curso?');
+        document.write('O curso informado é: ' + curso)
+
+        let idade = prompt('Qual é a sua idade?');
+        console.log('Idade informada: ' + idade)
+
+
+        //o prompt e outras formas de input retornam por padrão uma str
+        //então convertemos a str para número usando a função Number()
+        let num1 = Number(prompt('Digite o primeiro número'));
+        let num2 = Number(prompt('Digite o segundo número'));
+        let soma = num1 + num2;
+        alert('A soma é: ' + soma)
+
+        //porém, o prompt para toda a página, e não é muito utilizado
+    </script>
+
+
+
+</body>
+</html>
